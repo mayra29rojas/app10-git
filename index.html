@@ -1,0 +1,535 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>decima Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app10.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/> 
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/gama-baja2.jpg','imagenes/gama-media2.jpg','imagenes/celufutu4.jpg','imagenes/historia1.jpg','imagenes/conciencia1.jpg','imagenes/greenpeace1.jpg','imagenes/pnuma1.jpg','imagenes/batalla1.jpg','imagenes/viveros1.jpg','imagenes/viveros3.jpg','imagenes/viveros5.jpg','imagenes/atlixco.jpg','imagenes/villa.jpg','imagenes/zocalo.jpg')">
+
+
+<div data-role="page" id="Principal" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+ <h1 align="center">Atlixco, Puebla.</h1>
+</div>
+<div data-role="main" class="ui-content"></div>
+<div>
+  <p align="center"><img src="imagenes/atlixco_logo.jpg"  width="30%" height="25%">
+ </div>
+<div>
+<ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+<h2>Atlixco.</h2>
+
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+<h2>Cerro de San Miguel.</h2>
+
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Ex-convento del carmen.</h2>
+
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Calle de las flores.</h2>
+
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+<h2>Viveros de Cabrera.</h2>
+
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Templo de la merced.</h2>
+
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+<h2>Hospital de San Juan de Dios.</h2>
+
+</a>
+</li>
+
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r"> 
+<h2>Capilla de la Tercera Orden.</h2>
+
+</a>
+</li>
+<li>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Datos del programador.</h1>
+    <div>
+      <br>
+</div>
+<div>
+<p align="center">MAYRA EDITH ROJAS BARBOZA</p>
+<p align="center">ESPECIALIDAD: DESARROLLA APLICACIONES MOVILES</p>
+<p align="center">PLANTEL: CBTis No.16</p>
+<p align="center">APLICACION: 10</p>
+<br>
+     <img src="imagenes/autor.png" width="51%" height="59%">
+    </div>
+    </div>
+    </div>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="b" data-position="fixed">
+<div>
+<img src="imagenes/mdpi.png" width="46" heigth="46">
+</div>
+<div>
+
+<h4>Atlixco, Pueblo Magico.</h4>
+  </div>
+ </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>ATLIXCO</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+<h2>Se localiza a 25 kilómetros de la ciudad de Puebla, capital de la entidad homónima y tiene dos relevantes vías de ingreso, la carretera federal 190 y la más actual Autopista Vía Atlixcáyotl.
+El municipio colinda al norte con el municipio de Tanguismanalco, al noreste con los municipios de Santa Isabel Cholula y Ocoyucan, al suroeste con el municipio de Atzitzihuacan, al sur con los municipios de Huaquechula y Tepeojuma, sureste con el municipios de San Diego la Meza Tochimiltzingo, al este con la Ciudad de Puebla, y al oeste con el municipio de Tochimilco.
+
+<p>
+En la actualidad, es una dinámica ciudad con una población superior a los cien mil habitantes, los cuales han conseguido combinar un notable crecimiento urbano con una vasta herencia de arquitectura novohispana, creada por los fundadores del lugar. Actualmente estos edificios históricos integran uno de los atractivos más importantes de este Pueblo Mágico.</h2>
+
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('atlix','','imagenes/atlixco.jpg',1)"><img src="imagenes/atlix.jpg" width="422" height="383" id="atlix"></a>
+
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('atlixco','','imagenes/villa.jpg',1)"><img src="imagenes/atlixcoo.jpg" width="469" height="430" id="atlixco"></a>
+
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('zocalo','','imagenes/zocalo.jpg',1)"><img src="imagenes/zoca.jpg" width="480" height="298" id="zocalo"></a>
+
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+   <a href="https://www.google.com.mx/maps/dir/Puebla/Atlixco,+Puebla/@18.9448329,-98.3421999,11.75z/data=!4m14!4m13!1m5!1m1!1s0x85cfc0bd5ebc7a3b:0x48a6461de494ad95!2m2!1d-98.2061996!2d19.0412967!1m5!1m1!1s0x85cfb3eee015f935:0x5c4b12a3f9f700e7!2m2!1d-98.4293891!2d18.9131227!3e0" target="_self"  id="beep" data-role="button">
+   <h2>Ubicación</h2>
+    </a>
+   </li>
+   </ul>
+   </div>
+ </div>
+ </div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Atlixco, Pueblo Magico.</h4>
+</div>
+</div>
+
+
+
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Cerro de San Miguel.</h1>
+</div>
+<div data-role="content" align="left">
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/cerro.jpg" alt="cerro" title="cerro" id="wows1_0"/></li>
+		<li><img src="data1/images/cerro1.jpg" alt="cerro1" title="cerro1" id="wows1_1"/></li>
+		<li><img src="data1/images/cerro2.jpg" alt="cerro2" title="cerro2" id="wows1_2"/></li>
+		<li><img src="data1/images/cerro3.jpg" alt="cerro3" title="cerro3" id="wows1_3"/></li>
+		<li><img src="data1/images/cerro4.jpg" alt="cerro4" title="cerro4" id="wows1_4"/></li>
+		<li><img src="data1/images/cerro5.jpg" alt="cerro5" title="cerro5" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/cerro6.jpg" alt="responsive slider" title="cerro6" id="wows1_6"/></a></li>
+		<li><img src="data1/images/cerro7.jpg" alt="cerro7" title="cerro7" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="cerro"><span><img src="data1/tooltips/cerro.jpg" alt="cerro"/>1</span></a>
+		<a href="#" title="cerro1"><span><img src="data1/tooltips/cerro1.jpg" alt="cerro1"/>2</span></a>
+		<a href="#" title="cerro2"><span><img src="data1/tooltips/cerro2.jpg" alt="cerro2"/>3</span></a>
+		<a href="#" title="cerro3"><span><img src="data1/tooltips/cerro3.jpg" alt="cerro3"/>4</span></a>
+		<a href="#" title="cerro4"><span><img src="data1/tooltips/cerro4.jpg" alt="cerro4"/>5</span></a>
+		<a href="#" title="cerro5"><span><img src="data1/tooltips/cerro5.jpg" alt="cerro5"/>6</span></a>
+		<a href="#" title="cerro6"><span><img src="data1/tooltips/cerro6.jpg" alt="cerro6"/>7</span></a>
+		<a href="#" title="cerro7"><span><img src="data1/tooltips/cerro7.jpg" alt="cerro7"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">slider</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+<div>
+<h2>También conocido como Popocatica (cerro que humea) o Macuilxochitpec (cerro de las cinco flores), es el lugar en donde se realiza la fiesta máxima de Atlixco que se lleva a cabo el último domingo de septiembre y para la que se reúnen los representantes de las once regiones culturales de Puebla. Pero aunque tu visita no coincida con la fecha, el lugar te ofrece una maravillosa vista panorámica y siempre puedes visitar la Capilla de San Miguel.</h2>
+</div>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+   <a href="https://www.google.com.mx/maps/place/Cerro+de+San+Miguel/@18.9120563,-98.4366422,15.75z/data=!4m5!3m4!1s0x0:0xe4681e8e2e14222c!8m2!3d18.912737!4d-98.4374806" target="_self"  id="beep" data-role="button">
+   <h2>Ubicación</h2>
+    </a>
+   </li>
+  </ul>
+  </div>
+  </div>
+  
+  <div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+   <a href="http://www.sexenio.com.mx/puebla/articulo.php?id=55443" target="_self"  id="beep" data-role="button">
+   <h2>información.</h2>
+    </a>
+   </li>
+  </ul>
+  </div>
+  </div>
+  
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Atlixco, Pueblo Magico.</h4>
+</div>
+</div>
+
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="b">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>Ex-convento del carmen.</h1>
+  </div>
+   <div data-role="content" align="left">
+    <div>
+ <h2>Construido entre 1600 y 1620 lo limita una enorme barda que abarca aproximadamente dos manzanas y es un claro ejemplo del estilo barroco de la época. Cuando fueron exclaustrados los religiosos en 1853 el lugar fue convertido en rastro, luego oficinas gubernamentales, escuela (cuando tiran su torre), cárcel y cuartel para tropas federales. Ahora es conocido como el Centro Cultural del Carmen y alberga un pequeño museo arqueológico.</h2>
+<br>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/ex_carmen.jpg" alt="ex_carmen" title="ex_carmen" id="wows1_0"/></li>
+		<li><img src="data1/images/ex_carmen1.jpg" alt="ex_carmen1" title="ex_carmen1" id="wows1_1"/></li>
+		<li><img src="data1/images/ex_carmen2.jpg" alt="ex_carmen2" title="ex_carmen2" id="wows1_2"/></li>
+		<li><img src="data1/images/ex_carmen3.jpg" alt="ex_carmen3" title="ex_carmen3" id="wows1_3"/></li>
+		<li><img src="data1/images/ex_carmen4.jpg" alt="ex_carmen4" title="ex_carmen4" id="wows1_4"/></li>
+		<li><img src="data1/images/ex_carmen5.jpg" alt="ex_carmen5" title="ex_carmen5" id="wows1_5"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/ex_carmen6.jpg" alt="slider" title="ex_carmen6" id="wows1_6"/></a></li>
+		<li><img src="data1/images/ex_carmen7.jpg" alt="ex_carmen7" title="ex_carmen7" id="wows1_7"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="ex_carmen"><span><img src="data1/tooltips/ex_carmen.jpg" alt="ex_carmen"/>1</span></a>
+		<a href="#" title="ex_carmen1"><span><img src="data1/tooltips/ex_carmen1.jpg" alt="ex_carmen1"/>2</span></a>
+		<a href="#" title="ex_carmen2"><span><img src="data1/tooltips/ex_carmen2.jpg" alt="ex_carmen2"/>3</span></a>
+		<a href="#" title="ex_carmen3"><span><img src="data1/tooltips/ex_carmen3.jpg" alt="ex_carmen3"/>4</span></a>
+		<a href="#" title="ex_carmen4"><span><img src="data1/tooltips/ex_carmen4.jpg" alt="ex_carmen4"/>5</span></a>
+		<a href="#" title="ex_carmen5"><span><img src="data1/tooltips/ex_carmen5.jpg" alt="ex_carmen5"/>6</span></a>
+		<a href="#" title="ex_carmen6"><span><img src="data1/tooltips/ex_carmen6.jpg" alt="ex_carmen6"/>7</span></a>
+		<a href="#" title="ex_carmen7"><span><img src="data1/tooltips/ex_carmen7.jpg" alt="ex_carmen7"/>8</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com/vi">bootstrap carousel</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</div>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+   <a href="https://www.google.com.mx/maps/place/Ex-Convento+De+Nuestra+Se%C3%B1ora+Del+Carmen/@18.9090853,-98.4325558,15.25z/data=!4m5!3m4!1s0x0:0xf52be33b1cb2d9dc!8m2!3d18.9090401!4d-98.4328357" target="_self"  id="beep" data-role="button">
+   <h2>Ubicación</h2>
+    </a>
+   </li>
+  </ul>
+  </div>
+  </div>
+</div>
+<div data-role="footer" data-theme="b" data-position="fixed">
+    <h4>Atlixco, Pueblo Magico.</h4>
+    </div>
+</div>
+    
+    
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="b">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>Calle de las flores.</h1>
+    </div>
+    <div data-role="content" align="left">
+    <div>
+     <h2>Sobre la Avenida Hidalgo se encuentra esta emblemática calle denominada la Calle de las Flores, donde podrás apreciar sus renovadas fachadas adornadas con flores del municipio.
+Durante el recorrido podrás apreciar las casonas que fueron reconstruidas, hasta llegar a la Escalera Ancha lugar donde se realizaba el Huey Atlixcáyotl y ahora tras su remodelación encontrarás un reloj gigante hecho a base de flores.</h2>
+<br>
+      
+  <ul>
+<li>CALLE DE LAS FLORES.</li>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Avenida Hidalgo.</h1>
+    <div>
+      <br>
+</div>
+<div>
+     <img src="imagenes/calle_flores.jpg" width="27%" height="27%">
+    </div>
+    </div>
+    </div>
+<li>CALLE DE LAS FLORES.</li>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+ <h1>Avenida Hidalgo.</h1>
+    <div>
+      <br>
+</div>
+<div>
+     <img src="imagenes/calle.jpg" width="24%" height="26%">
+    </div>
+    </div>
+    </div>
+<li>CALLE DE LAS FLORES.</li>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Avenida Hidalgo.</h1>
+    <div>
+      <br>
+</div>
+<div>
+     <img src="imagenes/calle1.jpg" width="26%" height="28%">
+    </div>
+    </div>
+    </div>
+
+<li>CALLE DE LAS FLORES.</li>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+    <h1>Avenida Hidalgo.</h1>
+    <div>
+      <br>
+</div>
+<div>
+     <img src="imagenes/reloj.jpg" width="27%" height="28%">
+    </div>
+    </div>
+    </div>
+    
+    <li>CALLE DE LAS FLORES.</li>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Avenida Hidalgo.</h1>
+    <div>
+      <br>
+</div>
+<div>
+     <img src="imagenes/estatua.jpg" width="27%" height="28%">
+    </div>
+    </div>
+    </div>
+</ul>
+  </div>
+</div>
+      <div data-role="footer" data-theme="b" data-position="fixed">
+      <h4>Atlixco, Pueblo Magico.</h4>
+      </div>
+</div>
+      
+
+
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Viveros de Cabrera</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+<h2>Uno de los muchos atractivos turísticos que ofrece el municipio de Atlixco son los viveros de la colonia cabrera, mismos que se han encargado de preservar el nombre de “Atlixco de las Flores” esto por la producción de más de 120 mil plantas que se tiene.</h2>
+
+<h2>Son más de 100 los viveros que se encuentran en toda esta colonia que gracias al turista, así como a los amantes de las flores día con día se va posicionando en el mercado como lugar favorito para llevarse un recuerdo viviente de este Pueblo Mágico.</h2>
+
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image41','','imagenes/viveros1.jpg',1)"><img src="imagenes/viveros.jpg" width="574" height="318" id="Image41"></a>
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('cabrera','','imagenes/viveros3.jpg',1)"><img src="imagenes/viveros2.jpg" width="572" height="405" id="cabrera"></a>
+<br>
+<p align="center"><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('viveros','','imagenes/viveros5.jpg',1)"><img src="imagenes/viveros4.jpg" width="534" height="338" id="viveros"></a><br>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+   <a href="https://www.google.com.mx/maps/place/Cabrera,+Atlixco,+Pue./@18.9240695,-98.4574568,15z/data=!4m5!3m4!1s0x85cfb48b91464de9:0x15485ca69cdccf12!8m2!3d18.9225018!4d-98.4499559" target="_self"  id="beep" data-role="button">
+   <h2>Ubicación</h2>
+    </a>
+   </li>
+   </ul>
+   </div>
+ </div>
+ </div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Atlixco, Pueblo Magico.</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Templo de la merced.</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+<h2>Los Mercedarios en 1612 fundan este convento dedicado a la Visitación de Nuestra Señora de la Merced. La fachada es un muro almenado con dos grandes portadas coronadas por un nicho, un magnífico ejemplo del barroco de principios del s. XVIII.</h2>
+<h2>El interior de la iglesia es de una sola nave de gran altura con crucero y cúpula. En la Iglesia se conservan interesantes pinturas. Accediendo al convento se encuentra un claustro sencillo con fuente y una interesante puerta de piedra con arco de medio punto decorada con flores y aves.</h2>
+
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Templo de la merced.</h1>
+    <div>
+      <br>
+</div>
+<div>
+     <img src="imagenes/iglesia.jpg" width="74%" height="74%">
+    </div>
+    </div>
+    </div>
+   
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+   <a href="https://www.google.com.mx/maps/place/Iglesia+de+Nuestra+Se%C3%B1ora+de+la+Merced/@18.9113804,-98.4344782,15z/data=!4m5!3m4!1s0x0:0x1333d2628ce1380c!8m2!3d18.9113804!4d-98.4344782" target="_self"  id="beep" data-role="button">
+   <h2>Ubicación</h2>
+    </a>
+   </li>
+   </ul>
+   </div>
+   </div>
+ </div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Atlixco, Pueblo Magico.</h4>
+</div>
+</div>
+
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Hospital de San Juan de Dios.</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+<h2>De finales del s. XVI, se considera el primer hospital de Atlixco. El edificio estaba destinado a atender a la población y viajeros en la Villa de Carrión de las epidemias ocurridas a finales del siglo XVI. Un clérigo desarrolla un hospital con botica, dedicado a la Purísima Concepción de María, patrona de los enfermos, en la Plazuela del Santo Nombre de Jesús.</h2>
+
+<h2>Actualmente, este inmueble permanece con el mismo fin para el cual fue creado hace poco más de dos siglos, aun cuando se aprecian algunas separaciones y divisiones en su conjunto. Destaca en el edificio una colección de importantes pinturas que artistas poblanos reconocidos pintaron, entre ellos cabe mencionar a Luis Berrueco. Estas pinturas representan entre otros temas, diferentes pasajes de la vida de San Juan de Dios.</h2>
+
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Hospital San Juan de Dios.</h1>
+    <div>
+      <br>
+</div>
+<div>
+     <img src="imagenes/hospital.jpg" width="67%" height="64%">
+    </div>
+    </div>
+    </div>
+
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+   <a href="https://www.google.com.mx/maps/place/Hospital+De+S+Juan/@18.9088792,-98.4389112,15z/data=!4m5!3m4!1s0x0:0xd8137f861d23d97c!8m2!3d18.9088792!4d-98.4389112" target="_self"  id="beep" data-role="button">
+   <h2>Ubicación</h2>
+    </a>
+   </li>
+   </ul>
+   </div>
+   </div>
+ </div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Atlixco, Pueblo Magico.</h4>
+</div>
+</div>
+      
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="b">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>Capilla de la Tercera Orden.</h1>
+</div>
+<div data-role="content" align="left">
+<div>
+<h2>La capilla fue construida entre los s. XVII - XVIII por la Tercera Orden Franciscana. Destaca su bellísima portada de estilo barroco con influencia indígena decorada con argamasa. Con un delicado trabajo, se combinan formas geométricas y vegetales, columnas y nichos con esculturas de San Pedro, San Pablo, San Antonio de Padua y San Francisco de Asís. En el interior, magníficos retablos barrocos del s. XVII, con esculturas y pinturas de temática franciscana. Son muy interesantes también el púlpito de madera y la pila bautismal.</h2>
+<div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+   <h1>Capilla de la tercera Orden.</h1>
+    <div>
+      <br>
+</div>
+<div>
+     <img src="imagenes/capilla.JPG" width="59%" height="67%">
+    </div>
+    </div>
+    </div>
+<div data-role="main" class="ui-content" align="center">
+  <div style="width:40%;">
+    <ul data-role="controlgroup" data-type="vertical" data-theme="b">
+    <li class="ui-first-child ui-last-child">
+   <a href="https://www.google.com.mx/maps/place/Capilla+de+la+Tercera+Orden/@19.062353,-98.3039438,15z/data=!4m5!3m4!1s0x0:0x1a3acafb67d63cc9!8m2!3d19.062353!4d-98.3039438" target="_self"  id="beep" data-role="button">
+   <h2>Ubicación</h2>
+    </a>
+   </li>
+   </ul>
+   </div>
+   </div>
+ </div>
+</div>
+
+<div data-role="footer" data-theme="b" data-position="fixed">
+<h4>Atlixco, Pueblo Magico.</h4>
+</div>
+</div>
+
+</body>
+</html>
+
